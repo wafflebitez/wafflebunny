@@ -1,5 +1,6 @@
 {
     "token": "token_here",
+    "openai_key": "openai_key_here",
     "command_prefix": ".",
     "status": "wafflebunny | .help | v1.0b",
     "owner_id": 212056562452267008,

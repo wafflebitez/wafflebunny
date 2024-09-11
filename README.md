@@ -33,7 +33,7 @@ wafflebunny is a fun and feature-rich Discord bot with OpenAI integration for ch
     ```
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/wafflebitez/wafflebunny/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/wafflebitez/wafflebunny/blob/main/LICENSE) file for details.
 
 ## Contact
 For any questions, feedback, or issues you may encounter, feel free to contact me directly on Discord: `wafflebitez`

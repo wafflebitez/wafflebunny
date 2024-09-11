@@ -1,10 +1,10 @@
-import logging
-import sys
-from utils.jsonfile import JsonFile
-
 """
 This module handles the JSON configuration file.
 """
+
+import logging
+import sys
+from utils.jsonfile import JsonFile
 
 DEFAULT_CONFIG = {
     'token': 'token_here',

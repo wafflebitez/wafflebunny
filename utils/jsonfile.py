@@ -1,10 +1,10 @@
-import json
-import logging
-import os
-
 """
 This module handles JSON file operations.
 """
+
+import json
+import logging
+import os
 
 class JsonFile:
 
@@ -29,6 +29,7 @@ class JsonFile:
                 return json.load(file)
         except json.JSONDecodeError as e:
             logging.error('Failed to decode JSON from "%s": %s', self.filepath, e)
+            return None
 
     def save(self, data):
         """
@@ -36,9 +37,6 @@ class JsonFile:
 
         :param dict data: The data to be written in the JSON file
         """
-        try:
-            with open(self.filepath, 'w', encoding='utf-8') as file:
-                json.dump(data, file, indent=4)
-            logging.info('"%s" successfully saved.', self.filepath)
-        except Exception as e:
-            logging.error('Failed to save "%s": %s', self.filepath, e)
+        with open(self.filepath, 'w', encoding='utf-8') as file:
+            json.dump(data, file, indent=4)
+        logging.info('"%s" successfully saved.', self.filepath)

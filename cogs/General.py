@@ -22,6 +22,22 @@ class General(commands.Cog):
         except:
             return await ctx.reply('An error occured whilst fetching your cat image.')
         return await ctx.reply(data[0]['url'])
+    
+    @commands.command()
+    async def dog(self, ctx):
+        try:
+            data = requests.get('https://api.thedogapi.com/v1/images/search').json()
+        except:
+            return await ctx.reply('An error occured whilst fetching your dog image.')
+        return await ctx.reply(data[0]['url'])
+    
+    @commands.command(aliases=['rabbit'])
+    async def bunny(self, ctx):
+        try:
+            data = requests.get('https://rabbit-api-two.vercel.app/api/random').json()
+        except:
+            return await ctx.reply('An error occured whilst fetching your bunny image.')
+        return await ctx.reply(data['url'])
 
 async def setup(bot):
     await bot.add_cog(General(bot))

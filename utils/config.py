@@ -9,9 +9,9 @@ from utils.jsonfile import JsonFile
 DEFAULT_CONFIG = {
     'token': 'token_here',
     'openai_key': 'openai_key_here',
-    'command_prefix': '.',
-    'status': 'wafflebunny | .help | v1.0b',
-    'owner_id': 212056562452267008,
+    'command_prefix': '-',
+    'status': '-help | v1.0b',
+    'owner_id': 0,
     'debug': False
 }
 

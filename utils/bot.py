@@ -3,8 +3,8 @@ This module handles any classes/functions using selfcord.py.
 """
 
 import logging
-import openai
 import os
+import openai
 import selfcord as discord
 from selfcord.ext import commands
 

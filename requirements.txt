@@ -1,3 +1,5 @@
 git+https://github.com/dolfies/discord.py-self@2955c49517355fb95a6716ce5705f4635f32499b#egg=selfcord.py[voice]
 openai==1.44.1
 requests==2.32.3
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.25.1
